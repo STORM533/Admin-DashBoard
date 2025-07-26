@@ -9,10 +9,13 @@
     text-align: center;
 }
 .left-side{
-    background-color: aqua;
+    background-color: rgb(0, 183, 255);
     display: grid;
     grid-column: 1 / 2;
+    grid-template-rows: 150px 300px 150px;
+
     grid-row: 1 / 3;
+    
 }
 
 .main-content{
@@ -81,10 +84,9 @@
 	margin-left: 100px;
   }
   #searchbar{
-    display: grid;
+    width: 600px;
     height: 40px;
 	  padding: 10px 20px;
-  	grid-template-columns: repeat(1 ,clamp(500px 80% 1000px)) ;
   	border: none;
   background-color: #e8f0fe;
   border-radius: 20px;
@@ -147,9 +149,59 @@ button{
   background-color: rgb(119, 0, 255);
   border-radius: 30px;
   outline: none;
+  border-color: navy;
 }
 button:hover{
   background-color: aqua;
+}
+.p-1{
+  
+  display: grid;
+  grid-template-columns: 100px 50px;
+  gap: 10px ;
+  
+}
+.p-1 p{
+  font-size: 35px;
+  font-weight:500;
+  margin-top: 20px;
+  color: white;
+}
+.p-1 svg{
+width: 80px;
+}
+.p-2 {
+  display: grid;
+  grid-template-columns: 80px 50px;
+  margin-left: 10px;
+  column-gap: 10px;
+  row-gap: 0px;
+}
+.p-2 p{
+  font-size: 20px;
+  font-weight:500;
+  margin-top: 12px;
+  color: white;
+}
+.p-2 svg{
+  width: 50px;
+}
+.p-3 {
+  display: grid;
+  grid-template-columns: 80px 50px;
+  margin-left: 10px;
+  margin-top: 30px;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.p-3 p{
+  font-size: 20px;
+  font-weight:500;
+  margin-top: 12px;
+  color: white;
+}
+.p-3 svg{
+  width: 50px;
 }
 
 
