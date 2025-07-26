@@ -274,6 +274,7 @@ width: 80px;
   margin: 0px;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5) ;
   gap: 19px;
 }
 
@@ -285,12 +286,12 @@ display: flex;
 gap: 20px;
 flex:  1 1 auto;
 }
-.bodys p{
+.bodies p{
   margin: 0px;
   font-size: 20px;
   font-weight: 100;
 }
-.bodys .names{
+.bodies .names{
   font-weight: 400;
 }
 
