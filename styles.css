@@ -15,16 +15,142 @@
     grid-row: 1 / 3;
 }
 
-.header{
-    display: grid;
-    grid-column: 2 / 3;
-    grid-row: 1 / 2;
-    background-color: blue;
-}
 .main-content{
     display: grid;
     grid-column: 2 / 3 ;
     background-color: red;
 }
+
+
+.article {
+  background-color: #bccbde;
+  grid-column: 1/2;
+  display: grid;
+  grid-template-columns:repeat(auto-fit , minmax(250px , 1fr)) ;
+  gap: 15px;
+}
+
+.article p {
+  font-size: 18px;
+  font-family: sans-serif;
+  color: white;
+  text-align: left;
+}
+
+.article .card {
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+  height: 200px;
+}
+
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.card .title {
+  font-size: 18px;
+  text-align: center;
+}
+.rs{
+    display: grid;
+    grid-column: 2/3;
+}
+.header{
+  display: flex;
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.151);
+  flex-direction: column;
+  gap: 50px;
+  background-color: rgba(230, 230, 230, 0.979);
+  }
+  .up{
+    display: flex;
+    justify-content: space-between;
+	margin-top: 40px;
+  }
+  .up1 svg{
+	width: 50px;
+  }
+  .up1{
+    display: flex;
+	gap: 30px;
+	margin-left: 100px;
+  }
+  #searchbar{
+    display: grid;
+    height: 40px;
+	  padding: 10px 20px;
+  	grid-template-columns: repeat(1 ,clamp(500px 80% 1000px)) ;
+  	border: none;
+  background-color: #e8f0fe;
+  border-radius: 20px;
+  font-size: 14px;
+  outline: none;
+  }
+  .up2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  1fr ;
+    gap: 30px;
+	margin-right: 100px;
+  }
+  .up2 svg {
+	width: 50px;
+  }
+  .up2 img{
+	width: 50px;
+  }
+  .up2 p{ 
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .down{
+	display: flex;
+	justify-content: space-between;
+  }
+  .ld{
+    margin-left: 90px;
+  }
+.ld-1{
+	display: flex;
+	align-items: center;
+	gap: 20px;
+  
+}
+.ld-1 img{
+  width: 100px;
+}
+.ld-2 .greet{
+    text-align:left;
+  font-size: 20px;
+  font-weight: 600;
+}
+.ld-2 p{
+  text-align:left;
+  font-size: 40px;
+  font-weight: 600;
+}
+.rd{
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+  margin-right: 100px;
+}
+button{
+  height: 50px;
+  width: 100px;
+  background-color: rgb(119, 0, 255);
+  border-radius: 30px;
+  outline: none;
+}
+button:hover{
+  background-color: aqua;
+}
+
 
 
